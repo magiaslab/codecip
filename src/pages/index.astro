@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 class="mr-2">Mingalaba</h1>
+      <h1 class="mr-2">CodeCip</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -41,25 +41,23 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+       CodeCip nasce per raccontare le mie esperienze nello sviluppo di siti e snippet con Astro Build. Dopo anni passati a sviluppare con WordPress temi e siti approccio
+       alla tecnologia JamStack scoprendo questo nuovo allin framework. Scopriamolo insieme!!
       </p>
       <p>
-        Read the blog posts or check
+        Scopri il mio portfolio sul mio profilo GitHub
         <LinkButton
           className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
           href="https://github.com/satnaing/astro-paper#readme"
         >
-          README
-        </LinkButton> for more info.
+          Vai al profilo
+        </LinkButton>.
       </p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
+            <div class="social-links">Social Follow Up:</div>
             <Socials />
           </div>
         )
@@ -72,7 +70,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
+            <h2>Ultimi Post in evidenza</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
                 <Card
@@ -89,7 +87,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     }
 
     <section id="recent-posts">
-      <h2>Recent Posts</h2>
+      <h2>Ultimi Post</h2>
       <ul>
         {
           sortedPosts
@@ -108,7 +106,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </ul>
       <div class="all-posts-btn-wrapper">
         <LinkButton href="/posts">
-          All Posts
+          Vedi tutti i post
           <svg xmlns="http://www.w3.org/2000/svg"
             ><path
               d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
