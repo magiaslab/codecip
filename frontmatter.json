@@ -40,6 +40,14 @@
           "name": "heroImage",
           "type": "image",
           "isPreviewImage": true
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "choice",
+          "choices": [
+            "Astro"
+          ]
         }
       ]
     }
